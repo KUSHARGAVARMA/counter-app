@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button class="increment" id="inc">increment
+        </button>
+        <button class="decrement" id="dec">decrement
+        </button>
+        <input id="result">
+        
+    </div>
+    <script>
+        const incButton = document.getElementById("inc");
+        const decButton=document.getElementById("dec")
+        const resultField = document.getElementById("result");
+        var counter = 0;
+        function IncFunction(){
+            counter= counter+1;
+            // alert(counter);
+            resultField.value= counter;
+        }
+        function decFunction(){
+            counter= counter-1;
+            // alert(counter);
+            resultField.value= counter;
+        }
+        incButton.addEventListener("click",IncFunction);
+        decButton.addEventListener("click",decFunction);
+    </script>
+</body>
+</html>
