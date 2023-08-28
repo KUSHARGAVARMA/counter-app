@@ -14,7 +14,7 @@ import './App.css'
 
   return (
     <>
-      
+      {/* button functionality */}
         <button onClick={incrementCount}>
           +
         </button>
