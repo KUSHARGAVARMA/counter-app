@@ -19,7 +19,7 @@ import './App.css'
           +
         </button>
         <p>count is {count}</p>
-        <button onClick={incrementCount}>
+        <button onClick={decrementCount}>
           -
         </button>
 
